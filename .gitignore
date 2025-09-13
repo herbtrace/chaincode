@@ -1,0 +1,172 @@
+# Hyperledger Fabric Generated Files
+# ===================================
+
+# Crypto material and certificates
+organizations/peerOrganizations/
+organizations/ordererOrganizations/
+organizations/fabric-ca/*/msp/
+organizations/fabric-ca/*/tls-cert.pem
+organizations/fabric-ca/*/ca-cert.pem
+organizations/fabric-ca/*/IssuerPublicKey
+organizations/fabric-ca/*/IssuerRevocationPublicKey
+organizations/fabric-ca/*/fabric-ca-server.db
+
+# Channel artifacts
+test-network/channel-artifacts/*.block
+test-network/channel-artifacts/*.tx
+test-network/channel-artifacts/*.json
+test-network/channel-artifacts/*.pb
+test-network/system-genesis-block/
+
+# Docker volumes and containers
+docker_*
+test-network/docker/
+
+# Chaincode packages
+*.tar.gz
+*.tgz
+
+# Log files
+*.log
+log.txt
+test-network/log.txt
+
+# Vendor directories (Go modules)
+vendor/
+herb-asset/chaincode-go/vendor/
+
+# Build artifacts
+bin/
+build/
+dist/
+
+# IDE and Editor files
+# ====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Language specific
+# =================
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+go.work.sum
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+# ===============
+*.tmp
+*.temp
+.tmp/
+.temp/
+
+# OS generated files
+# ==================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fabric specific temporary files
+# ===============================
+test-network/monitordocker.sh
+test-network/docker-compose-*.yaml
+test-network/compose/docker/docker-compose-*.yaml
+
+# Certificate and key files (security)
+# ====================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+keystore/
+tlsca/
+
+# Configuration overrides
+# =======================
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Backup files
+# ============
+*.bak
+*.backup
+*.old
+
+# Fabric CA artifacts
+# ===================
+fabric-ca-server.db
+fabric-ca-server.db.bak
+msp/
+
+# Explorer artifacts
+# ==================
+explorer/
+pgdata/
+walletstore/
+
+# API artifacts
+# =============
+api/node_modules/
+api/.env
+gateway/node_modules/
+gateway/.env
+
+# Test artifacts
+# ==============
+coverage/
+test-results/
+.nyc_output/
